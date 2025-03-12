@@ -2,25 +2,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #303b3b;
+    display: flex;
+    justify-content: center;
 }
 
 header {
-    
+    background: #000;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 100px;
 }
 
 header h1 {
-
+    color: #6438b9;
+    font-size: 30px;
+    font-style: italic;
 }
 
 .links a {
 
 }
 
-.contacts .gitHub {
+.contacts {
 
+}
+
+.contacts .gitHub {
+    width: 50px;
+    color: #fff;
 }
 
 .contacts .instagram {
-
+    width: 50px;
 }
-
