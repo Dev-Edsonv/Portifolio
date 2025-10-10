@@ -5,43 +5,173 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    background: #303b3b;
-    display: flex;
-    justify-content: center;
+:root {
+    --cor-principal: white;
+    --cor-segundaria: #B0E0E6;
+    --purple: #A020F0;
+    --seaGreen: #2E8B57;
 }
 
-header {
-    background: #000;
-    width: 100%;
-    position: fixed;
+body {
+    background-color: #000;
+}
+
+.links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    color: var(--cor-principal);
+    position: fixed;
+    width: 100vw;
+    background-color: #1C1C1C;
+    top: 0;
+    height: 80px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    height: 100px;
 }
 
-header h1 {
-    color: #6438b9;
+.links h3 {
     font-size: 30px;
+    letter-spacing: 3px;
+    font-family: "Playwrite DE SAS", cursive;
+    font-weight: 300;
     font-style: italic;
 }
 
 .links a {
+    text-decoration: none;
+    margin-right: 40px;
+    color: var(--cor-principal);
+    font-size: 13px;
+}
+
+.links a:hover {
+    color: var(--cor-segundaria);
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* .home {
+
+} */
+
+.home h3 {
+    color: var(--cor-principal);
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.traço {
+    border-bottom: 5px solid var(--seaGreen);
+    padding-bottom: 5px;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 2px;
+    z-index: -1;
+}
+
+.home p {
+    color: var(--cor-principal);
+    font-size: 25px;
+    margin-left: 55px;
+    font-weight: 600;
+    font-family: "Playwrite DE SAS", cursive;
+}
+
+.home h2 {
+    color: var(--cor-principal);
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.myImage .minhaImagem {
+    width: 270px;
+    border-radius: 100%;
+}
+
+.techs {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.techs h2 {
+    font-family: "Playwrite DE SAS", cursive;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: var(--cor-principal);
+}
+
+.techs input {
+    background-color: gray;
+    margin-left: 50px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    border: none;
+}
+
+.techs input::placeholder {
+    color: var(--cor-principal);
+}
+
+#sobre {
 
 }
 
-.contacts {
-
+.habilidades {
+    display: inline-block;
+    width: 500px;
+    border-left: 3px solid var(--purple);
 }
 
-.contacts .gitHub {
-    width: 50px;
-    color: #fff;
+.lado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
-.contacts .instagram {
-    width: 50px;
+.lado img {
+    margin-left: 50px;
+}
+
+.lado p {
+    margin-left: 30px;
+}
+
+
+
+#sobre h2 {
+    font-family: "Playwrite DE SAS", cursive;
+    color: var(--cor-principal);
+    text-align: center;
+    margin: 50px 0 50px 0;
+    display: block;
+}
+
+#sobre p {
+    color: var(--cor-principal);
+    font-size: 12px;
+    width: 500px;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.elementos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
