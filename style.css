@@ -102,8 +102,9 @@ body {
 
 
 .myImage .minhaImagem {
-    width: 230px;
-    border-radius: 14%;
+    width: 200px;
+    height: 230px;
+    border-radius: 100%;
 }
 
 .techs {
@@ -237,4 +238,15 @@ body {
 
 #contato a {
     margin-right: 20px;
+}
+
+#contato a:hover {
+    background: var(--cor-segundaria);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#contato a:active {
+    cursor: grab;
+    opacity: 0.5;
 }
