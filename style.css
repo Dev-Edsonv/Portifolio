@@ -12,6 +12,10 @@
     --seaGreen: #2E8B57;
 }
 
+h2 {
+    font-family: "Playwrite DE SAS", cursive !important;
+}
+
 body {
     background-color: #000;
 }
@@ -55,7 +59,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin: 10% 0;
 }
 
 /* .home {
@@ -95,9 +99,11 @@ body {
     letter-spacing: 1px;
 }
 
+
+
 .myImage .minhaImagem {
-    width: 270px;
-    border-radius: 100%;
+    width: 230px;
+    border-radius: 14%;
 }
 
 .techs {
@@ -127,9 +133,7 @@ body {
     color: var(--cor-principal);
 }
 
-#sobre {
-
-}
+#sobre {}
 
 .habilidades {
     display: inline-block;
@@ -174,4 +178,63 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+#projetos {
+    margin-top: 10%;
+}
+
+#projetos h2 {
+    font-size: 30px;
+    color: var(--cor-principal);
+    text-align: center;
+    font-style: italic;
+}
+
+.meusProjetos {
+    display: grid;
+    grid-template-columns: repeat(3, 15%);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.meusProjetos div {
+    border: 2px solid var(--cor-principal);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.meusProjetos div:hover {
+    background-color: var(--purple);
+    border-color: var(--seaGreen);
+    cursor: pointer;
+}
+
+.meusProjetos div:active {
+    opacity: 0.5;
+    cursor: grab;
+}
+
+.meusProjetos p {
+    color: var(--cor-principal);
+    display: flex;
+    font-size: 13px;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#contato a {
+    margin-right: 20px;
 }
