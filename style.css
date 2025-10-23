@@ -55,7 +55,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.button-menu {
+.menu {
     display: none;
 }
 
@@ -64,6 +64,7 @@ body {
     justify-content: space-around;
     align-items: center;
     margin: 10% 0;
+    text-align: center;
 }
 
 /* .home {
@@ -274,7 +275,7 @@ body {
 
     .links div {
         position: absolute;
-        top: 82px;
+        top: 55px;
         right: 95px;
         overflow: hidden;
         transition: all 1.5s ease-in-out;
@@ -290,9 +291,9 @@ body {
     .menu {
         display: block;
         width: 25px;
-        position: fixed;
+        position: absolute;
         background-color: var(--purple);
-        left: 150px;
+        right: 153px;
         border-radius: 6px;
         top: 20px;
         transition: all 0.5s ease-in-out;
@@ -302,7 +303,6 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
         margin-top: 70px;
     }
 
@@ -331,5 +331,93 @@ body {
     border-radius: 20px;
     margin-top: 20px;
     }
+
+    .techs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .techs h2 {
+        font-size: 20px;
+        text-align: start;
+    }
+
+    .techs input {
+        font-size: 10px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    #sobre h2 {
+        font-size: 20px;
+        margin: 25px 0;
+    }
+
+    .elementos {
+        display: block;
+    }
+
+    .habilidades {
+        display: block;
+        width: 250px;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lado {
+
+    }
+
+    #sobre img {
+        width: 25px;
+        height: auto;
+        margin-left: 30px;
+    }
+
+    #sobre p {
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .minhaBiografia {
+        display: none !important;
+    }
+
+    #projetos {
+        
+    }
+
+    #projetos h2 {
+        font-size: 20px;
+    }
+
+    .meusProjetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meusProjetos div {
+        width: 140px;
+        height: 140px;
+    }
+
+    .meusProjetos img {
+        width: 50px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .meusProjetos p {
+        font-size: 10px;
+    }
+    
 
 }
