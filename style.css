@@ -262,10 +262,12 @@ body {
     }
 
     .links {
-        display: block;
-        width: 50%;
-        height: 0;
-        position: static;
+        display: flex;
+        width: 100vw;
+        position: fixed;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -274,28 +276,23 @@ body {
     }
 
     .links div {
-        position: absolute;
-        top: 55px;
-        right: 95px;
-        overflow: hidden;
         transition: all 1.5s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .links a {
         display: block;
         font-size: 10px;
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
     .menu {
         display: block;
         width: 25px;
-        position: absolute;
-        background-color: var(--purple);
-        right: 153px;
+        background-color: var(--cor-segundaria);
         border-radius: 6px;
-        top: 20px;
         transition: all 0.5s ease-in-out;
     }
 
@@ -315,21 +312,22 @@ body {
     }
 
     .home p {
-        font-size: 13px;
+        font-size: 14px;
         margin: 0;
     }
 
     .home h2 {
         letter-spacing: 0;
-        font-size: 10px;
+        font-size: 14px;
         margin-top: 15px;
+        margin-left: 70px;
     }
 
     .myImage .minhaImagem {
-    width: 100px;
-    height: auto;
-    border-radius: 20px;
-    margin-top: 20px;
+        width: 130px;
+        height: auto;
+        border-radius: 20px;
+        margin-top: 30px;
     }
 
     .techs {
@@ -341,15 +339,16 @@ body {
 
     .techs h2 {
         font-size: 20px;
-        text-align: start;
+        text-align: center;
     }
 
     .techs input {
-        font-size: 10px;
+       font-size: 10px;
         margin-left: 0;
         margin-top: 10px;
+        padding: 10px;
     }
-    
+
     #sobre h2 {
         font-size: 20px;
         margin: 25px 0;
@@ -369,11 +368,10 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
     }
 
-    .lado {
-
-    }
+    .lado {}
 
     #sobre img {
         width: 25px;
@@ -387,21 +385,17 @@ body {
     }
 
     .minhaBiografia {
-        display: none !important;
+        width: 70vw !important;
+        margin-top: 20px;
+        font-size: 10px !important;
+        text-align: justify;
     }
 
-    #projetos {
-        
-    }
-
-    #projetos h2 {
-        font-size: 20px;
-    }
+    #projetos {}
 
     .meusProjetos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    grid-template-columns: repeat(2, 20vw);
+    gap: 50px;
     }
 
     .meusProjetos div {
