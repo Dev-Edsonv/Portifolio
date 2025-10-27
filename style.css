@@ -277,9 +277,11 @@ body {
 
     .links div {
         transition: all 1.5s ease-in-out;
-        display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+        transform: translateX(-500px);
+        display: flex;
     }
 
     .links a {
@@ -296,6 +298,15 @@ body {
         transition: all 0.5s ease-in-out;
     }
 
+    .meu:hover {
+        cursor: pointer;
+    }
+
+    .menu:active {
+        cursor: grab;
+        opacity: 0.8;
+    }
+
     .mainDiv {
         flex-direction: column;
         justify-content: center;
@@ -308,7 +319,8 @@ body {
     }
 
     .traço {
-        display: none;
+        display: block;
+        width: 130px;
     }
 
     .home p {
