@@ -394,7 +394,7 @@ body {
     #projetos {}
 
     .meusProjetos {
-    grid-template-columns: repeat(2, 20vw);
+    grid-template-columns: repeat(2, 30vw);
     gap: 50px;
     }
 
