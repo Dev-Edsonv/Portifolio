@@ -133,6 +133,7 @@ body {
     border-radius: 12px;
     text-align: center;
     border: none;
+    z-index: -1;
 }
 
 .techs input::placeholder {
